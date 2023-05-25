@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class Search {
+public class SearchLinkTest {
     @Test
     void successfulSearchTest() {
         open("https://www.google.com/");

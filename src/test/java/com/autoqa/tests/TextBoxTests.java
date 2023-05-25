@@ -12,7 +12,7 @@ public class TextBoxTests extends TestBase{
 
 
     @Test
-    void successfulFillFormTest() {
+    void successfulElementsTest() {
         open("/text-box");
 
         $("[id=userName]").setValue("Alyona");
@@ -22,5 +22,4 @@ public class TextBoxTests extends TestBase{
         $("#submit").click();
         $("#output").shouldHave(text("Alyona"), text("al.kz@yandex.ru"), text("no address"), text("no address too"));
     }
-
 }
