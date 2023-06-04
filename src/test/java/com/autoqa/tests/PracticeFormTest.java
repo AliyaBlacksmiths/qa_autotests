@@ -18,11 +18,8 @@ public class PracticeFormTest extends TestBase {
         $("#userNumber").setValue("8904859489");
         $("#dateOfBirthInput").click();
 
-
         $("#permanentAddress").setValue("no address too");
-
         $("#dateOfBirthInput").click();
-
         $("#output").shouldHave(text("Alyona"), text("al.kz@yandex.ru"), text("no address"), text("no address too"));
     }
 }
